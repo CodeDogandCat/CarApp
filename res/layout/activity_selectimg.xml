@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@color/red" >
+        
+        <TextView
+            android:id="@+id/activity_selectimg_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:textSize="20sp" 
+            android:layout_marginLeft="8dp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="写动态"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/activity_selectimg_send"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="发送"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/mainacticity_tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_margin="8dp"
+        android:gravity="left|top"
+        android:hint="标题"       
+        android:background="@null" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/mainacticity_tv_text"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_margin="8dp"
+        android:gravity="left|top"
+        android:hint="说点什么吧..."       
+        android:background="@null" >
+    </EditText>
+
+    <GridView 
+        android:id="@+id/noScrollgridview"
+        android:layout_width="290dp"
+        android:layout_height="350dp"
+        android:layout_marginLeft="5dp"
+        android:horizontalSpacing="3dp"        
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp" >
+    </GridView>
+
+</LinearLayout>

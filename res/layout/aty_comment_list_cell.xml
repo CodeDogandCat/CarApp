@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+        <TextView
+	        android:id="@+id/comment_tv_username"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left|center"
+	        android:textSize="14sp"
+	        android:layout_marginLeft="10sp"
+	        android:textColor="@color/blue"
+	        android:text="回帖者">
+	    </TextView>
+
+	    
+	    <TextView 
+	        android:layout_marginTop="15sp"
+	        android:id="@+id/comment_tv_text"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left|center"
+	        android:textSize="16sp"
+	         android:layout_marginLeft="25sp"
+	        android:text="内容"
+	         android:textColor="@color/black"/>
+	    <TextView
+	         android:layout_marginTop="10sp"
+	        android:id="@+id/comment_tv_time"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="right|center"
+	        android:textSize="12sp"
+			android:paddingRight="20sp"
+	        android:text="时间"
+	        android:textColor="@color/gray"/>
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qrqc.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+    
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+
+    
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 禁止手机硬件加速-->
+    <application
+        android:name="com.juhe.petrolstation.activity.PetrolStationApplication"
+        android:hardwareAccelerated="false"  
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" 
+        android:theme="@android:style/Theme.NoTitleBar"
+        >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="WP0ouNkjW4On0xIT1TYDKIcp" />
+        <meta-data
+            android:name="com.thinkland.juheapi.openid"
+            android:value="JHe1d63da033ec2bf598ef0940a2e1e922" />
+        <activity
+            android:name="com.qrqc.message.activity.SendMessageActivity"
+           >
+        </activity>
+        <activity
+            android:name="com.qrqc.message.activity.ImageGridActivity" android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.qrqc.message.activity.TestPicActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qrqc.message.activity.PhotoActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.qrqc.message.activity.AlbumActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.qrqc.message.activity.ImageFile" >
+        </activity>
+        <activity
+            android:name="com.qrqc.message.activity.ShowAllPhoto" >
+        </activity>
+        <activity
+            android:name="com.qrqc.message.activity.GalleryActivity">
+        </activity>
+        
+        <activity
+            android:name="com.qrqc.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.qrqc.activity.DengluActivity">
+        </activity>
+        <activity
+            android:name="com.qrqc.activity.ZhuceActivity">
+        </activity>
+        <activity
+            android:name="com.qrqc.activity.First">
+        </activity>
+        <activity
+            android:name="com.qrqc.activity.MessageActivity">
+        </activity>
+        <activity
+            android:name="com.qrqc.activity.ReplyActivity">
+        </activity>
+        <activity
+            android:name="com.qrqc.activity.TimelineActivity">
+        </activity>
+        <activity
+            android:name="com.qrqc.activity.CarlistActivity">
+        </activity>
+        <activity
+            android:name="com.qrqc.activity.CarActivity">
+        </activity>
+        <activity
+            android:name="com.qrqc.activity.GongsijieshaoActivity">
+        </activity>
+        <activity
+            android:name="com.qrqc.activity.LianxiwomenActivity">
+        </activity>
+        <activity
+            android:name="com.qrqc.activity.ShangjiafuwuActivity">
+        </activity>
+        <activity
+            android:name="com.qrqc.activity.NewslistActivity">
+        </activity>
+        <activity
+            android:name="com.qrqc.chexingduibi.HListViewActivity"
+            android:theme="@android:style/Animation.Activity" />
+        
+        <activity
+            android:name="com.juhe.petrolstation.activity.StationInfoActivity"
+            android:screenOrientation="portrait" />
+            <activity
+            android:name="com.juhe.petrolstation.activity.StationListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.juhe.petrolstation.activity.RouteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.juhe.petrolstation.activity.PertrolStationActivity"
+            android:screenOrientation="portrait" />
+ 		<activity android:name="com.weizhang.activity.ShortNameList" >
+        </activity>
+        <activity android:name="com.weizhang.activity.ProvinceList" >
+        </activity>
+        <activity android:name="com.weizhang.activity.CityList" >
+        </activity>
+        <activity android:name="com.weizhang.activity.WeizhangResult" >
+        </activity>
+        <activity android:name="com.weizhang.activity.WeizhangActivity" >
+        </activity>
+        <service android:name="com.cheshouye.api.client.WeizhangIntentService" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        
+    </application>
+
+</manifest>

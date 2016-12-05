@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"  
+    android:orientation="vertical" >
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/black"  
+	    android:orientation="horizontal" >
+	    <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="40sp"
+	            android:layout_marginLeft="12sp"
+	            android:textColor="@color/white"
+	            android:gravity="center_vertical"
+	            android:id="@+id/btn_gototianjia"
+	            android:textSize="20sp"
+	            android:text="返回"
+	             />
+	     <TextView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="40sp"
+	        android:textColor="@color/white"
+	        android:gravity="right|center_vertical"
+	        android:text="标配  ● 可选 ○ 无 - "
+	        android:paddingRight="8sp"
+	        />
+	</LinearLayout>
+    
+
+   
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="80dip"
+        android:orientation="horizontal" 
+        android:background="@drawable/linearlayout_green_round_selector">
+
+        
+
+        <com.qrqc.chexingduibi.CHScrollView2
+            android:id="@+id/item_scroll_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+                 <TextView
+                    android:text=""
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/btn_car0"
+                    android:text="*"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/btn_car1"
+                    android:text="*"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/btn_car2"
+                    android:text="*"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/btn_car3"
+                    android:text="*"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/btn_car4"
+                    android:text="*"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/btn_car5"
+                    android:text="*"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center" />
+            </LinearLayout>
+        </com.qrqc.chexingduibi.CHScrollView2>
+    </LinearLayout>
+	
+    <ListView
+        android:id="@+id/hlistview_scroll_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

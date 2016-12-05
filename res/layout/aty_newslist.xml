@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+	<TextView
+	    	android:id="@+id/tv_send_message"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40sp"
+			android:layout_gravity="center_horizontal"
+	        android:textSize="20sp" 
+	        android:text="新闻资讯"
+	        android:textStyle="bold"
+	        android:textColor="@color/white"
+	        android:gravity="center"
+	        android:paddingRight="12sp"
+	        android:background="@color/red"
+	        >
+	</TextView>
+	
+	<ListView
+	      android:cacheColorHint="#00000000"
+	      android:id="@android:id/list"
+	      android:layout_width="fill_parent"
+	      android:layout_height="fill_parent" 
+	      android:scrollbars="vertical">
+	</ListView>
+	
+	
+
+</LinearLayout>

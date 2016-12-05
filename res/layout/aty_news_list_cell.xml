@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+	<ImageView
+	    android:id="@+id/newslist_ImageView_cell"
+        android:layout_width="120sp"
+        android:layout_height="80sp"
+        android:src="@drawable/ic_launcher"
+        android:scaleType="fitXY"
+        android:layout_marginTop="1sp"
+        android:layout_marginLeft="1sp"
+        android:layout_marginBottom="1sp"
+	    />
+     <RelativeLayout 
+         android:layout_width="match_parent"
+	     android:layout_height="80sp"
+	     android:orientation="vertical" 
+         >
+	         
+	         <TextView
+		        android:id="@+id/newslist_tv_title__cell"
+		        android:layout_width="fill_parent"
+		        android:layout_height="50sp"
+		        android:padding="5dp"
+		        android:textSize="16sp"
+		        android:textColor="@color/black"
+		        android:text="超级大促销"/>
+	         
+	         <TextView
+		        android:id="@+id/newslist_tv_time__cell"
+		       android:layout_width="fill_parent"
+		        android:layout_height="50sp"
+		        android:padding="5dp"
+		        android:textSize="12sp"
+		        android:textColor="@color/gray"
+		        android:layout_alignParentRight="true"
+		        android:layout_alignParentBottom="true"
+		        android:layout_below="@id/newslist_tv_title__cell"
+		        android:gravity="bottom|right"
+		        android:text="3月28日"
+		        />
+	         
+		     
+	         
+	         
+     </RelativeLayout>
+    
+
+</LinearLayout>

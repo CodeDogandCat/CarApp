@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/Code">
-		<attributes>
-			<attribute name="owner.project.facets" value="java"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="D:/Code/jdk/lib/ant-javafx.jar"/>
-	<classpathentry kind="lib" path="D:/Code/jdk/lib/dt.jar"/>
-	<classpathentry kind="lib" path="D:/Code/jdk/lib/javafx-mx.jar"/>
-	<classpathentry kind="lib" path="D:/Code/jdk/lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Code/jdk/lib/sa-jdi.jar"/>
-	<classpathentry kind="lib" path="D:/Code/jdk/lib/tools.jar"/>
-	<classpathentry kind="lib" path="D:/Code/jre"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="lib" path="libs/android-async-http-1.4.4.jar"/>
+	<classpathentry kind="lib" path="libs/picasso-2.4.0.jar"/>
+	<classpathentry kind="lib" path="libs/BaiduLBS_Android.jar"/>
+	<classpathentry kind="lib" path="libs/juhe_sdk_v_2_1.jar"/>
+	<classpathentry kind="lib" path="libs/armeabi"/>
+	<classpathentry kind="lib" path="libs/weizhang_sdk.jar"/>
+	<classpathentry kind="lib" path="libs/universal-image-loader-1.8.6-with-sources.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

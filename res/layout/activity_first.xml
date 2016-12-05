@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    <LinearLayout 
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:background="@color/red"
+       >
+
+        <TextView
+            android:id="@+id/btn_tuichu"
+            android:layout_width="fill_parent"
+           android:layout_height="40sp"
+            android:paddingRight="12sp"
+            android:gravity="right|center_vertical"
+            android:layout_gravity="right"
+            android:text="退出账号"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+	</LinearLayout>  
+ <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="210dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/shadow_article" >
+
+            
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/author_layout"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:maxLines="2"
+                android:text="标题"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/author_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="20dp" >
+                
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   
+                    android:layout_marginLeft="10dp"
+                    android:maxLines="1"
+                    android:text="时间"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_pre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_date"
+                     android:layout_marginLeft="10dp"
+                    android:text="来自"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_topic_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_pre"
+                     android:layout_marginLeft="10dp"
+                    android:text="链接出处"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_topic_from"
+                    android:text="话题"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center" >
+
+            <View
+                android:id="@+id/v_dot0"
+                style="@style/dot_style"
+                android:background="@drawable/dot_focused"
+                android:visibility="invisible" />
+
+            <View
+                android:id="@+id/v_dot1"
+                style="@style/dot_style" 
+                android:visibility="invisible"/>
+
+            <View
+                android:id="@+id/v_dot2"
+                style="@style/dot_style" 
+                android:visibility="invisible"/>
+
+            <View
+                android:id="@+id/v_dot3"
+                style="@style/dot_style" 
+                android:visibility="invisible"/>
+
+            <View
+                android:id="@+id/v_dot4"
+                style="@style/dot_style"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backcolor"
+    android:orientation="vertical" >
+  	<LinearLayout 
+			       
+			       android:layout_width="fill_parent" 
+			       android:layout_height="0dip"
+			       android:layout_weight="1"
+			       android:orientation="horizontal"
+			       android:gravity="center_horizontal"
+			       android:background="@color/backcolor"
+			       >
+			       <ImageView 
+			           android:id="@+id/btn_chexingbaojia"
+			            android:layout_width="0dip"
+			           android:layout_height="fill_parent"
+			           android:layout_marginLeft="30sp"
+			           android:layout_weight="1"
+			           android:src="@drawable/btn1"
+			            android:scaleType="fitCenter"
+			           
+			           />
+			       <ImageView 
+			           android:id="@+id/btn_cheyouluntan"
+			           android:layout_width="0dip"
+			           android:layout_height="fill_parent"
+			           android:layout_marginRight="30sp"
+			           android:layout_weight="1"
+			            android:src="@drawable/btn2"
+			             android:scaleType="fitCenter"
+			           />
+			   </LinearLayout>
+			    <LinearLayout 
+			       
+			       android:layout_width="fill_parent" 
+			       android:layout_height="0dip"
+			       android:layout_weight="1"
+			       android:orientation="horizontal"
+			        android:gravity="center_horizontal"
+			       >
+			       <ImageView 
+			           android:id="@+id/btn_shangjiafuwu"
+			         android:layout_width="0dip"
+			           android:layout_height="fill_parent"
+			           android:layout_marginLeft="30sp"
+			           android:layout_weight="1"
+			            android:src="@drawable/btn3"
+			             android:scaleType="fitCenter"
+			           />
+			       <ImageView 
+			           android:id="@+id/btn_xinwenzixun"
+			           android:layout_width="0dip"
+			           android:layout_height="fill_parent"
+			           android:layout_marginRight="30sp"
+			           android:layout_weight="1"
+			            android:src="@drawable/btn4"
+			             android:scaleType="fitCenter"
+			           />
+			   </LinearLayout>
+			    <LinearLayout 
+			       
+			       android:layout_width="fill_parent" 
+			       android:layout_height="0dip"
+			       android:layout_weight="1"
+			       android:orientation="horizontal"
+			        android:gravity="center_horizontal"
+			        
+			       >
+			       <ImageView 
+			           android:id="@+id/btn_gongsijianjie"
+			         android:layout_width="0dip"
+			           android:layout_height="fill_parent"
+			           android:layout_marginLeft="30sp"
+			           android:layout_weight="1"
+			            android:src="@drawable/btn5"
+			             android:scaleType="fitCenter"
+			           />
+			       <ImageView 
+			           android:id="@+id/btn_lianxiwomen"
+			          android:layout_width="0dip"
+			           android:layout_height="fill_parent"
+			           android:layout_marginRight="30sp"
+			           android:layout_weight="1"
+			            android:src="@drawable/btn6"
+			            android:scaleType="fitCenter"
+			           />
+			       
+			   </LinearLayout>
+			  </LinearLayout>
+
+</LinearLayout>

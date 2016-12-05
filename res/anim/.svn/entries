@@ -1,0 +1,76 @@
+8
+
+dir
+438
+svn://192.168.1.99/android/CupTime/res/anim
+svn://192.168.1.99/android
+
+
+
+2013-10-16T02:51:29.546953Z
+438
+wangfei
+
+
+svn:special svn:externals svn:needs-lock
+
+fade_in.xml
+file
+572
+
+
+
+2013-10-30T03:56:24.912742Z
+778ad1b1d88a8f7cbbd30c4b3684e875
+2013-10-31T01:55:59.131463Z
+572
+wangfei
+
+hold.xml
+file
+
+
+
+
+2013-09-29T09:31:22.024919Z
+c408e928b1cb298d8b9f048c365e5fa8
+2013-10-16T02:51:29.546953Z
+438
+wangfei
+
+push_bottom_in.xml
+file
+
+
+
+
+2013-10-19T03:59:51.985576Z
+39247b30a79a9d07599616ab21105e0c
+2013-10-16T02:51:29.546953Z
+438
+wangfei
+
+push_bottom_in_1.xml
+file
+572
+
+
+
+2013-10-30T03:56:18.477982Z
+d2e076f06f5f4dbd8877076294b1aafe
+2013-10-31T01:55:59.131463Z
+572
+wangfei
+
+push_up_out.xml
+file
+
+
+
+
+2013-09-29T09:31:22.032919Z
+40d2dd34eec96b95511f3b542b456f04
+2013-10-16T02:51:29.546953Z
+438
+wangfei
+

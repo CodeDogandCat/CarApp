@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hello.MainActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="@color/white" >
+
+   <LinearLayout 
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:background="@color/red"
+       >
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="40sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="联系我们"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+	</LinearLayout>  
+
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical|left"
+        android:text="  地址：        蜀山区芙蓉路303号"
+        android:textSize="20dp" 
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical|left"
+        android:text="  QQ：          2668021463"
+        android:textSize="20dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical|left"
+        android:text="  电话：        4008171090"
+        android:textSize="20dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical|left"
+        android:text="  经理：        小飞"
+        android:textSize="20dp" 
+        android:textColor="@color/black"/>
+
+    
+
+    
+
+   
+
+</LinearLayout>

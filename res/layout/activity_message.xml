@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical">
+     <TextView
+	    
+        android:id="@+id/showMessage_btn_reply"
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:gravity="center_vertical|right"
+        android:text="评论"
+        android:textSize="20sp" 
+        android:textStyle="bold"
+        android:paddingRight="12sp"
+        android:background="@color/red"
+        android:textColor="@color/white"
+       />
+	<ScrollView 
+	    android:id="@+id/showMessage_ScrollView"
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@color/white"
+	    android:scrollbars="vertical"
+	   android:layout_below="@id/showMessage_btn_reply"
+	    >
+    
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="#ffffff"
+		    android:orientation="vertical" >
+
+	    <TextView
+	        android:id="@+id/showMessage_tv_title"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15sp"  
+	        android:gravity="left|top"
+	        android:text="标题"
+	        android:layout_marginLeft="8sp"
+	        android:textColor="@color/black"
+	        android:textSize="40sp" >
+	    </TextView>
+	    <TextView
+	        android:id="@+id/showMessage_tv_username"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/showMessage_tv_title"
+	        android:gravity="left|top"
+	        android:textSize="14sp"
+	        android:layout_marginLeft="12sp"
+	        android:textColor="@color/black"
+	        android:text="楼主">
+	    </TextView>
+
+	    <TextView
+	        android:id="@+id/showMessage_tv_time"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/showMessage_tv_username"
+	        android:gravity="right|top"
+	        android:textSize="12sp"
+	        android:layout_marginRight="20sp"
+	        android:textColor="@color/black"
+	        android:text="时间">
+	    </TextView>
+	    <TextView 
+	        android:id="@+id/showMessage_tv_text"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/showMessage_tv_time"
+	        android:layout_margin="14sp"
+	        android:gravity="left|top"
+	        android:textSize="18sp"
+	        android:textColor="@color/black"
+	        android:text="内容"/>
+		<LinearLayout  
+		     android:id="@+id/viewGroup"  
+		     android:layout_width="fill_parent"  
+		     android:layout_height="wrap_content"  
+		     android:layout_below="@id/showMessage_tv_text"
+		     android:gravity="center_horizontal"  
+		     android:orientation="vertical" >
+    
+		</LinearLayout> 
+
+ 		<ListView
+ 		    android:cacheColorHint="#00000000"
+ 		    android:id="@android:id/list"
+ 		    android:layout_width="match_parent"
+ 		    android:layout_height="wrap_content"
+ 		    android:layout_below="@id/viewGroup"
+ 		    android:textColor="@color/black" 
+ 		     android:fadingEdge="vertical" 
+ 		     android:divider="#00000000"
+ 		   >
+ 		   
+		</ListView>
+	   </RelativeLayout>
+	</ScrollView>
+	
+	
+	
+</RelativeLayout>

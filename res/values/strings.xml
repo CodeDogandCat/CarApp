@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">奇瑞汽车</string>
+	
+    <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="finish">完成</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string> 
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+    <string name="connecting_to_server">正在连接服务器</string>
+    <string name="connecting">请等待</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+	<string name="release_to_refresh">释放立即刷新</string>
+	<string name="refreshing">正在刷新…</string>
+	<string name="not_updated_yet">暂未更新过</string>
+	<string name="updated_at">上次更新于%1$s前</string>
+	<string name="updated_just_now">刚刚更新</string>
+	<string name="time_error">时间有问题</string>
+    <string name="dialog_distance_title">请选择检索范围</string>
+    <string name="kilometre_3">3km</string>
+    <string name="kilometre_5">5km</string>
+    <string name="kilometre_8">8km</string>
+    <string name="kilometre_10">10km</string>
+    <string name="station_price">本站油价</string>
+    <string name="province_price">省控基准油价</string>
+    <string name="text_load">正在获取加油站信息…</string>
+    
+     <string name="csy_form_tip">目前仅支持小型汽车查询</string>
+    <string name="csy_btn_query">开始查询</string>    
+    <string name="csy_cxdz_lab">查询地</string>
+    <string name="csy_cxdz_tip">请选择查询地</string>    
+    <string name="csy_chepai_lab">车牌号</string>
+    <string name="csy_chepai_tip">请输入车牌号后6位</string>
+    <string name="csy_chejia_lab">车架号</string>    
+    <string name="csy_engine_lab">发动机号</string>
+    <string name="csy_close">关闭</string>
+</resources>

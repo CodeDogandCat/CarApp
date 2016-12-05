@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hello.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+   <LinearLayout 
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:background="@color/red"
+       >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40sp"
+            android:paddingRight="12sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="企业介绍"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+	</LinearLayout>  
+    
+
+    
+    <ScrollView
+		android:id="@+id/scrollView"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:scrollbarStyle="outsideOverlay" >
+        <LinearLayout 
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@color/white"
+       >
+
+		<ImageView
+        android:layout_width="400sp"
+        android:layout_height="250sp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/summary_01"
+         />
+		<ImageView
+		 android:layout_width="400sp"
+        android:layout_height="250sp"
+        android:scaleType="fitCenter"
+         android:layout_gravity="center_horizontal"
+         android:src="@drawable/summary_02"
+         />
+		<ImageView
+         android:layout_width="400sp"
+        android:layout_height="250sp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/summary_03"
+         />
+		<ImageView
+       android:layout_width="400sp"
+        android:layout_height="250sp"
+        android:scaleType="fitCenter"
+          android:layout_gravity="center_horizontal"
+          android:src="@drawable/summary_04"
+          />
+		<TextView
+		android:layout_marginTop="20sp"
+		android:paddingLeft="15sp"
+		android:paddingRight="15sp"
+		android:paddingBottom="50sp"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView"
+		android:textSize="18sp"
+		android:textColor="@color/black"
+		android:text="
+
+\t\t奇瑞汽车 股份有限公司成立于1997年1月8日，是我国改革开放后,通过自主创新成长起来的最具代表性的自主品牌汽车企业之一。公司成立19年来，始终坚持自主创新，逐步建立了完整的技术和产品研发体系，并打造了艾瑞泽、瑞虎、风云、QQ和东方之子等一系列在国内家喩户晓的知名产品品牌，而且产品出口到海外80余个国家和地区，在全球范围内具备了一定的品牌知名度。截至目前，公司累计销量已超过500万辆，其中，累计出口超过110万辆，总销量和出口量均位居中国乘用车企业第一位。\n\n
+
+\t\t目前，公司在国内建成了芜湖、大连和鄂尔多斯三大乘用车生产基地，具备年产90万辆整车、90万台套发动机及80万台变速箱的生产能力。\n\n
+
+\t\t在产品品质提升方面，公司以“安全、节能、环保”为发展目标，逐步与国际接轨，建立了一套具有自身特色的品质保障管理体系，先后通过ISO9001、德国莱茵公司ISO/TS16949等国际质量管理体系认证。\n\n
+
+\t\t“自主创新” 是奇瑞发展战略的核心。从创立之初，奇瑞就坚持自主创新，努力成为一个技术型企业。目前，奇瑞已建成了以芜湖的汽车工程研究和研发总院为核心，以北京、上海以及海外研究分院为支撑，形成了从整车、动力总成、关键零部件开发到试制、试验较为完整的产品研发体系。通过自主创新，奇瑞在DVVT双可变气门正时技术、TGDI涡轮增压缸内直喷技术、CVT无级变速器以及新能源等一大批核心技术上获得突破，带动了全系产品的全面技术升级。在知识产权建设方面，截止2015年底，奇瑞已累计申请各项专利12882件，累计获得授权专利8129件,位居本土汽车企业第一位。由于在自主创新方面取得的成绩，奇瑞汽车成为我国首批“创新型企业”。\n\n
+
+\t\t打造 “国际品牌” 奇瑞的战略发展目标。首先，在“无内不稳，无外不强”发展理念的推动下，注重开拓国际、国内两个市场，积极实施“走出去”战略，成为我国第一个将整车、CKD散件、发动机以及整车制造技术和装备出口至国外的轿车企业。其次，全面推进全球化布局，实施从“走出去”向“走进去”扎根发展的转变，在全球建立了14个生产基地，通过实施产品战略、属地化战略和人才战略不断加深海外市场的深层次合作。第三、整合全球优势资源，在全产业链上与跨国公司展开合作，截至目前，奇瑞已与16家世界500强企业展开了合资合作。在整车方面，奇瑞和以色列量子集团合资建立的观致汽车，开创了国内汽车业发展的新模式；2012年，奇瑞又与捷豹路虎成立合资企业，展开全面合作。这一系列的合资合作作为奇瑞发展战略的重要补充，为提升奇瑞汽车综合实力和品牌价值，实现企业战略发展目标起到重要的推动作用。\n\n
+
+\t\t从2010年起，在实现了第一阶段“通过自主创新打造自主品牌”的战略目标的基础上，奇瑞开始全面实施从追求速度和销量规模的发展模式到向追求“品质、品牌、效益”转变的深层次战略转型，并确立了企业从2012年到2020年的三阶段的发展战略目标。从企业经营理念到管理体系进行了全方位大刀阔斧的变革，目的就是要建立与国际接轨的产品开发、生产、营销以及质量管理、人力资源管理和财务管理体系等，为实现企业的战略目标及可持续发展奠定基础。\n\n
+
+\t\t2015年，奇瑞战略转型后上市的一系列新产品获得市场认可和好评，产品和品牌溢价能力不断提升。同时，在营销体系建设方面也取得重要成就，根据J.D.Power2015年中国售后服务满意度研究（CSI）及销售满意度研究（SSI）调研报告显示，奇瑞汽车分别获得746分和711分，超越众多主流合资品牌，分别位列行业第6名和第10名。\n\n
+
+\t\t未来，奇瑞汽车将秉承“创新奇瑞 让你更精彩”的企业使命，继续保持自身独特的创新文化和艰苦奋斗的“小草房”精神，为实现“到2020年成为具有国际竞争力的世界级汽车企业，产品主要技术性能达到国际一流水平”的企业战略目标而奋斗。\n\n
+
+
+"
+		
+		/>
+		  </LinearLayout>
+	</ScrollView>
+
+    
+
+</LinearLayout>
